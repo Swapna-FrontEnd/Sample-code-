@@ -1,0 +1,69 @@
+ECMA => European Computers Manufacturers Association
+
+Standards for JS and TS
+
+ECMA 2015
+
+ES6 
+
+TypeScript is developed based on ES6.
+
+
+TypeScript for writing angular code.
+
+
+DataTypes
+=========
+Primitive Types
+================
+string
+number
+boolean
+null
+undefined
+symbol
+
+Object Types
+===========
+Arrays
+Classes
+etc.,
+
+
+Handson on datatypes:
+
+
+=> create a ts file for displaying all primes under 100.
+
+=> create an arrow function using  typescript
+
+	to find repeated values in the given
+
+=> create a class called student and declare marks as array and
+  define a method in class to display result using following conditions
+
+	> 75% => distinction
+	<75% and >60% => first class
+	<60% and >50% => second class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

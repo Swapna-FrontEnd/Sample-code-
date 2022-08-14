@@ -1,0 +1,174 @@
+Steps to set up in windows operating system:
+===========================================
+
+
+Step 1: download node from www.nodejs.org/en/download
+
+Step 2: Double click on downloaded file
+
+Step 3: follow the sequence steps to complete installation
+
+Step 4: check if node is installed or not using command prompt
+
+node -v
+npm -v
+
+Step 5: install angular if not installed using following command
+
+npm install -g @angular/cli
+
+Step 6: to confirm angular installed or not
+
+ng --version
+
+
+node is a server which is asynchronous server which uses endless loop called as Event Loop to execute tasks.
+
+node js provides set of modules(predefined code in the form of packages) which are two types
+
+1. predefined 
+   example:http,fs,email etc.,
+
+2. userdefined
+
+
+npm(node package manager) is used to install,uninstall,update packages of node.
+
+Angular Framework is built on Node
+
+syntax for installing the package: npm install <package-name> (or) npm i <package-name>
+				   npm install <package-name>@version
+
+syntax for uninstalling the package: npm uninstall <package-name>
+				     npm uninstall <package-name>@version
+
+
+syntax for update the package: npm update <package-name>
+
+Advantages of JSON
+====================
+Light Weight
+Easy to Understand
+Platform independent
+
+
+
+Setting up node project
+=======================
+Step 1: create a directory 
+
+d:/> mkdir <directory_name>
+
+step 2: change to above director
+
+d:/> cd <directory_name>
+
+step 3: execute following command
+
+npm init (this command initialises the node project)
+
+step 4: just press enter for all options
+
+step 5: it asks for creating package.json file
+type "yes"
+
+step 6: open the above directory/folder using vs code
+
+step 7: open vs code
+
+step 8: click on 'file' Menu
+
+step 9: choose 'open folder' option
+
+step 10: a pop up opens choose your folder
+
+step 11: click select folder
+
+step 12: install required packages for project using
+
+npm install <package-name>
+				
+Setting up GRUNT to execute custom tasks
+========================================
+
+Step 1: Run the following command to set up Grunt and TypeScript in your project:
+
+sudo npm install typescript --save-dev
+
+sudo npm install grunt --save-dev
+
+sudo npm install grunt-cli -g
+
+Set up the grunt-ts by running the following command:
+
+sudo npm install grunt-ts
+
+
+Step 2: Generating a .js file with server.ts and Gruntfile.js
+
+Open Visual Studio Code
+
+Create two files, server.ts and Gruntfile.js
+
+Add the following source code in server.ts:
+
+var sys = require("sys"),
+
+my_http = require("http");
+
+my_http.createServer(function(request,response){
+
+    sys.puts("I got kicked");
+
+    response.writeHeader(200, {"Content-Type": "text/plain"});
+
+    response.write("Hello World");
+
+    response.end();
+
+}).listen(8080);
+
+sys.puts("Server Running on 8080");
+
+ 
+
+Step 3: Add the following source code in Gruntfile.js:
+
+module.exports = function(grunt) {
+
+    grunt.initConfig({
+
+        ts: {
+
+            default : {
+
+                src: ["**/*.ts", "!node_modules/**/*.ts"]
+
+            }
+
+        }
+
+    });
+
+    grunt.loadNpmTasks("grunt-ts");
+
+    grunt.registerTask("default", ["ts"]);
+
+}
+
+ 
+
+ 
+
+Step 4:Run the following command to execute Grunt on the .ts file:
+
+grunt --force
+
+Step 5:  You should be able to find that the following files will be created with a few errors and warning at the command line:
+
+server.js
+
+server.js.map
+
+
+ 
