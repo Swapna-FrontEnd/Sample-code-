@@ -1,0 +1,23 @@
+{
+  "name": "samplenodeapp",
+  "version": "1.0.0",
+  "description": "node sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "swapna",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.2.0",
+    "grunt": "^1.5.3",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "grunt-ts": "^6.0.0-beta.22",
+    "jquery": "^3.6.0"
+  }
+}
